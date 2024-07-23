@@ -47,13 +47,14 @@
           </div>
           <div>
             <label for="name">Name</label>
-            <input type="text" name="name" required />
+            <input type="text" name="name" id="ename" required />
           </div>
           <div>
             <label for="amount">Amount</label>
             <input
               type="number"
               name="amount"
+              id="eamount"
               value="0"
               min="0.01"
               step="0.01"
@@ -62,13 +63,34 @@
           </div>
           <div>
             <label for="date">Date</label>
-            <input type="date" name="date" required />
+            <input type="date" id="edate" name="date" required />
           </div>
           <button type="submit">Submit</button>
         </form>
       </section>
+      
     </main>
+    <section style="height:100vh ">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat exercitationem aspernatur saepe quidem voluptas? Excepturi consequuntur reiciendis qui iusto, neque incidunt sed. Nobis quaerat qui ab quidem eaque voluptate libero?
+      <hr>
+      <table id="expens" style="border:1px">
+        <thead>
+          <tr>
+            <th style="padding: 5px">Expense</th>
+            <th style="padding: 5px">Amount</th>
+            <th style="padding: 5px">Date</th>
+          </tr>
+        </thead>
+        <tbody id="expenseTable">
+          
+        </tbody>
 
-    <script src="script.js"></script>
+
+      </table>
+
+
+    </section>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
